@@ -1,0 +1,175 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic); 
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+.wrapper{
+    display: table;
+    overflow: hidden;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    min-width: 1060px;
+}
+.w1{
+    display: table-row;
+    height: 100%;   
+}
+.container{
+    padding: 0 10px;
+    width: 1040px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+.header{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.logo img{
+    margin-bottom: 40px;
+}
+
+/* MAINMENU*/
+.main-menu{ 
+    background: linear-gradient(to bottom,  rgba(94,94,94,1) 0%,rgba(68,67,67,1) 100%); 
+}
+.main-menu-list{
+    margin: 0;
+    padding: 0;
+}
+.main-menu-list li{
+    display: inline-block;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.main-menu li:hover{
+    background: linear-gradient(to bottom, rgba(74,74,74,1) 0%,rgba(46,46,46,1) 100%); 
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+.main-menu-list li a{
+    display: block;
+    padding: 14px 22px 16px 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*CONTAINER*/
+.main{
+    width: 100%;
+}
+.left-menu{
+    display: block;
+    width: 240px; 
+    float: left;
+    margin-right: 48px;
+}
+.left-menu-list{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c8c8c8;
+}
+.left-menu-list li{
+    border-bottom: 1px solid #c8c8c8;
+}
+.left-menu-list li:last-child{
+    border-bottom: none;
+}
+.left-menu-list li{
+    display: block;
+    width: 100%;
+}
+.left-menu-list li a{
+    display: block;
+    width: 100%;
+    padding: 14px 23px 16px 23px;
+    text-decoration: none;
+    color: #656363;
+    transition-property: padding-left;
+    transition-duration: 0.5s;
+}
+.left-menu-list li a:hover{
+    padding-left: 35px;
+    padding-right: 11px;
+    color: #2c2c2c;
+}
+.left-menu-list li:hover{
+    background-color: #f9f9f9;
+}
+
+/*Основной контент*/
+.main-content{
+    display: block;
+    overflow: hidden;
+}
+.image-box{
+    padding: 55px 0;
+    border: 1px solid #c8c8c8;
+    text-align: center;
+}
+.content-text-box{
+    padding: 24px;
+    color: #2c2c2c;
+    line-height: 22px;
+}
+
+/*FOOTER*/
+.footer{
+    overflow: hidden;
+    margin-bottom: 60px;    
+}
+.footer-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #e1e1e1;
+}
+.footer-menu-list-box{
+    display: block;
+    float: left;
+    padding-left: 25px;
+
+}
+.footer-menu-list{
+    margin: 0;
+    padding: 0;
+}
+.footer-menu-list li{
+    display: inline-block;
+    margin: 0 80px 0 10px;
+}
+.footer-menu-list li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #2c2c2c;
+}
+.footer-menu-list li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #8d8d8d;
+}
+.copyright{
+    float: right;
+    padding: 10px;
+    margin-right: 17px;
+    color: #2c2c2c;
+}
+
+/*CLEAR FIX*/
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
