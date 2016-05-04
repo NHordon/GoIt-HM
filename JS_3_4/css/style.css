@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'opensans-light';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.woff') format('embedded-opentype'),
+    url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    font-size: 16px;
+}
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'opensans-light';
+    font-weight: bold;
+    font-size: 16px;
+}
+.wrapper h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.categoryBox {
+    margin-left: 100px;
+}
+.my-checkBox {
+    cursor: pointer;
+    outline: none;
+}
+.buttonWrap {
+    padding-top: 56px;
+    padding-bottom: 63px;
+    text-align: center;
+}
+.button {
+    width: 327px;
+    height: 56px;
+    background: #cde2f5;
+    border: 4px solid black;
+    text-weight: bold;
+}

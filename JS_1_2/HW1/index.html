@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Degree</title>
+</head>
+<body>
+
+
+<script>
+	function pow(x, n) {
+	var result = x;
+
+	for (var i=1; i<n; i++) {
+		result *=x;
+	}
+	return result;
+}
+	var x = prompt('Enter number', '');
+	var n = prompt('Enter degree', '');
+
+	if (n <= 0) {
+		alert('please, enter degree bigger then 0');
+	} else {
+		console.log( pow(x, n) );
+	}
+</script>
+
+</body>
+</html>

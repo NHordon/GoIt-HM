@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	margin: auto;
+	width: 500px;
+	height: 540px;
+}
+td {
+	border: 6px solid #000;
+}
+.td1 {
+	border-top: none;
+	border-left: none;
+}
+.td2 {
+	border-top: none;
+}
+.td3 {
+	background: #fff467;
+	border-top: none;
+	border-right: none;
+}
+
+.td4 {
+	border-left: none;
+}
+.td5 {
+	background: #ff5743;
+}
+.td6 {
+	background: #fff467;
+	border-right: none;
+}
+.td7 {
+	border-left: none;
+}
+.td9 {
+	border-right: none;
+}
+.td10 {
+	background: #000;
+}
+.td12 {
+	border-right: none;
+}
+.td13 {
+	background: #fff467;
+	border-bottom: none;
+	border-left: none;
+}
+.td15 {
+	background: #104b88;
+	border-right: none;
+}
+.td16 {
+	border-bottom: none;
+}
+.td17 {
+	background: #000;
+}
+.td18 {
+	border-right: none;
+	border-bottom: none;
+}

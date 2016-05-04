@@ -1,0 +1,42 @@
+@media screen and (max-width:960px) {
+    * {
+        margin: 0 auto;
+    }
+
+    .conteiner {
+        position: relative;
+        overlow: hidden;
+    }
+    .logo {
+        position: absolute;
+        widht: 157px;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+    .menu {
+        float: left;
+        margin-top: 148px;
+        padding-bottom: 80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .logo {
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width:480px) {
+
+}

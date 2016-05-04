@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS 9-10</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/fancySelect.css">
+        <link rel="stylesheet" href="css/nicecheckbox.css">
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <!--<script type="text/javascript" src="../../vendor/jquery/jquery.js"></script-->
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+        <script src="js/fancySelect.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                        <li class="dropdown"><a href="#">Nav 3</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.1</a></li>
+                                <li class="dropdown"><a href="#">Nav 3.4</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Nav 3.4.1</a></li>
+                                    <li class="dropdown"><a href="#">Nav 3.4.2</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Nav 3.4.2.1</a></li>
+                                            <li><a href="#">Nav 3.4.2.2</a></li>
+                                            <li><a href="#">Nav 3.4.2.3</a></li>
+                                            <li><a href="#">Nav 3.4.2.4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nav 3.5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>My son</h1>
+
+            <p>I love my son. He is the main man in my life.</p>
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img1.jpg" alt="Image 1" width="600" height="400" alt=""></li>
+                        <li><img src="img/img2.jpg" alt="Image 2" width="600" height="400" alt=""></li>
+                        <li><img src="img/img3.jpg" alt="Image 3" width="600" height="400" alt=""></li>
+                        <li><img src="img/img4.jpg" alt="Image 4" width="600" height="400" alt=""></li>
+                        <li><img src="img/img5.jpg" alt="Image 5" width="600" height="400" alt=""></li>
+                       
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination"></p>
+                </div>
+
+            <div class="select-wrapper">
+                <select class="basic">
+                    <option value="">Pick Something…</option>
+                    <option>Lorem Ipsum</option>
+                    <option>Dolor Sit</option>
+                    <option>Vehicula Ornare</option>
+                    <option>Foo</option>
+                    <option>Bar</option>
+                    <option>Baz</option>
+                    <option>Qux</option>
+                    <option>ZoobieZoobieZoobieZoobie</option>
+                    <option>Frang</option>
+                </select>
+            </div>
+            <div class="checkbox-wrapper clearfix">
+                <div class="js_form_wrapper">
+                    <form class="js_form">
+                        <h3>JS Checkbox</h3>
+                        <div class="js_checkbox">
+                <span>
+                    <input type="checkbox">
+                </span>
+                            <label>Вариант 1</label>
+                        </div>
+                        <div class="js_checkbox">
+                <span>
+                    <input type="checkbox">
+                </span>
+                            <label>Вариант 2</label>
+                        </div>
+                        <div class="js_checkbox">
+                <span>
+                    <input type="checkbox" checked = checked>
+                </span>
+                            <label>Вариант 3</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="css_form_wrapper clearfix">
+                    <form class="css_form">
+                        <h3>CSS Checkbox</h3>
+                        <div class="css_checkbox">
+                            <input type="checkbox" id="css_checkbox_1">
+                            <label for="css_checkbox_1">Вариант 1</label>
+                        </div>
+                        <div class="css_checkbox">
+                            <input type="checkbox" id="css_checkbox_2">
+                            <label for="css_checkbox_2">Вариант 2</label>
+                        </div>
+                        <div class="css_checkbox">
+                            <input type="checkbox" checked = checked id="css_checkbox_3">
+                            <label for="css_checkbox_3">Вариант 3</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

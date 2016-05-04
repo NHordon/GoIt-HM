@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.checkbox-wrapper {
+    width: 100%;
+}
+.js_form_wrapper, .css_form_wrapper{
+    float:left;
+    margin: 10px 50px;
+    padding: 20px;
+}
+.js_form_wrapper{
+    background: #2B8686;
+}
+.css_form_wrapper{
+    background: #dfaa00;
+}
+.js_checkbox span input[type="checkbox"]{
+    display: none;
+}
+.js_checkbox{
+    height: 42px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.js_checkbox span {
+    display: inline-block;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    background: url("../img/checkbox-sprite.png") no-repeat 0 0;
+    margin-right:10px;
+}
+.js_check_active span{
+    background-position: 0 -17px;
+}
+
+/*CSS Checkbox*/
+.css_checkbox{
+    height: 42px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.css_checkbox input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.css_checkbox label {
+    cursor: pointer;
+}
+.css_checkbox label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+.css_checkbox input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+.css_checkbox label:hover:after {
+    background-position: 0 -34px;
+}
+.css_checkbox input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}

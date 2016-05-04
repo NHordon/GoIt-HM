@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArrayName</title>
+</head>
+<body>
+<!-- А это совсем не по тз, но короче... И главный недостаток, что строку нужно правильно записать с пробелами и запятыми, иначе порежет неправильно! Ещё не знаю Break нужен? типо остановка... -->
+
+
+<script>
+var listNames = prompt("Введите имена для массива через запятую:" );
+
+arrName = listNames.split(', ');
+
+alert("Итого мы имеем массив: " + arrName);
+
+var name = prompt('Введите имя');
+
+for(var i = 0; i < arrName.length; i++) {
+  if (name == arrName[i]) {
+    alert ( arrName[i] + ', вы успешно вошли!!' );
+    break; 
+  } else if( name !== arrName.length-1; i++) {
+    alert( 'Ошибка' );
+    continue;
+  };
+  else  {
+ 			alert( 'Ошибка' );
+}
+} 
+</script>
+</body>
+</html>

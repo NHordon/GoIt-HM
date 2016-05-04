@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home work 11-12</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.mySlider.js"></script>
+	<script src="js/js_templ.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+	<div class="view">
+	  <ul>
+    	<li><img src="img/image1.jpg"><p>Описание 1</p></li>
+    	<li><img src="img/image2.jpg"><p>Описание 2</p></li>
+    	<li><img src="img/image3.jpg"><p>Описание 3</p></li>
+    	<li><img src="img/image4.jpg"><p>Описание 4</p></li>
+    	<li><img src="img/image5.jpg"><p>Описание 5</p></li>
+	   </ul>
+	</div>
+		<div id="show">
+			<button id="prev" data-dir="prev">Prev</button>
+			<button id="next" data-dir="next">Next</button>
+		</div>
+</div>
+<div class="template_block">
+	<script type="text/html" id="profile_tmpl">
+		<div class="profile_card">
+			<div class="image">
+				<h1><%=name%></h1>
+				<img height="140" src= <%=photo_link%> alt=<%=photo_alt%>>
+				<p><%=work%></p>
+			</div>
+			<div class="info"> Хочу выучить Front-End, потому-что:
+				<ul>
+					<% items.forEach(function(item) { %>
+					<li><%=item%></li>
+					<% }); %>
+				</ul>
+			</div>
+			<div class="info"><br><%=phone_num%><br>
+				Мой профиль Вконтакте:<br>
+				<a href=<%=vk_link%> target="_blank">vk.com</a>
+			</div>
+			<div class="info"> Мой фидбек:<br>
+				<%=feedback%>
+			</div>
+		</div>
+	</script>
+</div>
+</body>
+</html>

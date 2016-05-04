@@ -1,0 +1,88 @@
+
+body{
+    font: 20px/24px 'Arial',sans-serif;
+}
+.wrapper{
+    margin: 10px auto;
+    width: 800px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 5px;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+ul{
+    margin: 10px 0 10px 80px;
+}
+ol{
+    list-style-type: decimal;
+}
+.test_form__list{
+    margin-left: 80px;
+}
+.test_form__submit{
+
+    display: block;
+    margin: 0 auto;
+    width: 325px;
+    height: 50px;
+    font-size: 18px;
+    background:#cfe2f3;
+    border: 1px solid #000;
+    margin-top: 35px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+label {
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 10px 35px;
+    width: 250px;
+}
+
+.checkbox_span:before {
+    content: " ";
+    display:inline-block;
+    border: 1px solid #000;
+    background: #c9e4f9;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+
+}
+
+input[type="checkbox"]:checked + .checkbox_span:before {
+    background: #000;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.resault_fail{
+    color: red;
+}
+.modal-title, .modal-body{
+    text-align: center;
+}
+.modal-body{
+    font-size: 18px;
+}

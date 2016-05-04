@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height:  100%;
+	background: black;
+}
+.wrapper {
+	width: 500px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	padding-top: 200px;
+}
+#countup p {
+	font-size: 50px;
+	font-weight: 500;
+	font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 40px;
+	display: inline-block;
+	margin: 0 auto;
+}
+#start, #split, #reset {
+	width: 70px;
+	height: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+	margin-right: 20px;
+}
+#start:hover, #split:hover, #reset:hover {
+	cursor: pointer;
+	color: magenta;
+	box-shadow: 0 0 15px 6px magenta;
+	transition: 0.2s;
+}
+.timerBtns {
+	padding-top: 20px;
+}
+.split p{
+	width: 100%;
+	border: 1px solid magenta;
+	box-shadow: 0 0 15px 6px magenta;
+	margin-top: 20px;
+	font-size: 16px;
+
+}

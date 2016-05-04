@@ -1,0 +1,39 @@
+<!DOCTYPE >
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArrayName</title>
+</head>
+<body>
+
+
+
+<script>
+var arrName = [];
+
+	for(var i = 0; i < 5; i++) {
+	arrName[i] = prompt('Заполняем массив имен, имя №'+(i+1)+":");
+}
+
+alert("Итого мы имеем массив: " + arrName);
+	
+var name = prompt ('Введите имя');
+
+ 	for(var i = 0; i < arrName.length; i++) {
+ 		
+ 		if (name == arrName[i]) {
+ 			alert ( arrName[i] + 'вы успешно вошли' );
+ 			return;
+ 		} else if ( name != arrName[i] && i != arrName.length-1) {
+ 			continue;
+
+ 		}
+
+ 		else {
+ 			alert( 'Ошибка' );
+ 			return;
+ 		}
+ 	}  
+</script>
+</body>
+</html>
