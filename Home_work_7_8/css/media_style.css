@@ -2,7 +2,6 @@
     .container {
         width: 95%;
     }
-
     .logo {
         float: none;
     }
@@ -45,9 +44,6 @@
         display: block;
         overflow: hidden;
     }
-    .spots{
-        padding-bottom:55px;
-    }
     .box__text, .box__text_right {
         width: 45%;
     }
@@ -66,7 +62,7 @@
     .brands {
         padding: 0;
     }
-    .brand_list {
+    .brands li {
         padding: 26px 45px 31px 0;
     }
     .footer__menu li {
@@ -168,26 +164,27 @@
     .brands {
         padding: 0 0 37px;
     }
-    .brand_list {
+    .brands li {
         padding: 25px 35px 0;
     }
-    .first_column, .second_column, .third_column {
+    .columns__content {
         float: none;
         width: 100%;
-    }
-    .first_column {
         padding: 80px 0 0;
     }
-    .first_column h2 {
+    .columns__content:first-child {
+        padding: 80px 0 0;
+    }
+    .columns__content h2 {
         padding: 0;
     }
-    .second_column {
+    .columns__content {
         padding: 55px 0;
     }
-    .third_column {
+    .columns__content:last-child {
         padding: 0 0 80px;
     }
-    .third_column h3, .second_column h3 {
+    .columns__content h3 {
         padding-top: 0;
     }
     .footer__menu {

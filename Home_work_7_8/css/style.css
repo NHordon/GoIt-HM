@@ -1,4 +1,4 @@
-/*Fonts*/
+/*/*Fonts*/
 
 @font-face {
     font-family: 'league_gothicregular';
@@ -515,7 +515,6 @@ a {
 .slider_text {
     width: 53%;
     padding: 88px 0 78px 0;
-    /*display: inline-block;*/
     float: left;
 }
 .slider_text h1 {
@@ -547,7 +546,7 @@ a {
     max-width: 960px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 36px 167px 7px 0;
+    padding: 36px 167px;
 }
 .spots a {
     width: 17px;
@@ -727,7 +726,7 @@ a {
 .more {
     float: right;
     font-size: 18px;
-    font-family: "League Gothic";
+    font-family: "league_gothicregular";
     color: rgb(69, 69, 69);
     line-height: 1.333;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
@@ -738,7 +737,7 @@ a {
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
 }
-.brand_list {
+.brands li {
     display: inline-block;
     padding: 26px 65px 31px 0;
 }
@@ -747,31 +746,21 @@ a {
     background: #ececec;
     width: 100%;
 }
-.first_column {
+.columns__content {
     padding: 0 70px 100px 0;
     width: 33%;
     float: left;
 }
-.second_column {
-    padding: 0 70px 100px 0;
-    width: 33%;
-    float: left;
-}
-.third_column {
-    padding: 0 70px 100px 0;
-    width: 33%;
-    float: right;
-}
-.first_column h2 {
+.columns__content h2 {
     margin: 0;
-    padding-top: 102px;
+    padding-top: 39px;
     font-size: 48px;
     font-family: "league_gothicregular";
     color: rgb(69, 69, 69);
     line-height: 0.703;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
-.first_column p {
+.columns__content p {
     font-size: 16px;
     font-family: "Georgia";
     color: rgb(197, 197, 197);
@@ -795,7 +784,7 @@ a {
     line-height: 1.5;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
-.second_column h3, .third_column h3 {
+.columns__content {
     margin: 0 0 20px;
     padding-top: 100px;
     font-size: 30px;
