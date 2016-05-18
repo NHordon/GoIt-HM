@@ -15,7 +15,7 @@ $(function() {
 
     $('.js_checkbox').each(function(){
         var checkbox = $(this).find('input[type=checkbox]');
-        console.log(checkbox.attr("checked"));
+        //console.log(checkbox.attr("checked"));
         if(checkbox.attr("checked")){
             $(this).addClass("js_check_active");
         }
