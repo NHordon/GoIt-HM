@@ -1,41 +1,52 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/lodash.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
+    <title>Module_13-14</title>
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/templ.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
 <body>
-<script type="text/html" id='test'>
-    <h2 class="title"><%- data.pageTitle %></h2>
-    <form action="">
-        <% for (var i = 0; i < data.categories.length; i++ ) { %>
-        <div class="block">
-            <p><%- data.categories[i].categoryName%></p>
-            <ul>
-                <% for (var j = 0; j < data.categories[i].variant.length; j++) { %>
-                <li><label><input type="checkbox" name="<%- data.categories[i].inputName[j] %>"><span><%- data.categories[i].variant[j]%></span></label></li>
-                <% }; %>
+
+<script type="text/html"  id='test'>
+    <div class="page">
+        <h2><%= data.pageTitle %></h2>
+        <form action="#">
+            <ul class="test-form-item">
+            <% for (var i = 0; i < data.test.length; i++ ) { %>
+            <h3><%= data.test[i].questionsList %></h3>
+            <% for (var j = 0; j < data.test[i].answersList.length; j++ ) { %>
+            <label>
+                <input type="checkbox" id="<%= data.test[i].idName[j] %>">
+                <span class="checkbox_span">
+                    <%= data.test[i].answersList[j].answer %></span>
+                </label><br>
+            <% }; %>
+            <% }; %>
             </ul>
-        </div>
-        <% }; %>
-        <input  class="js-verify" type="submit" value="<%- data.result %>">
-    </form>
+            <div class="submit"><input  type="submit" name="submit" value="Результаты теста"></div>
+        </form>
+    </div>
 </script>
+
+
 <div class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Результаты теста</h4>
+                <h4 class="modal-title">Ваш результат</h4>
             </div>
             <div class="modal-body">
+                <p></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
