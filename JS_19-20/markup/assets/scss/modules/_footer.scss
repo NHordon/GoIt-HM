@@ -1,0 +1,78 @@
+
+
+
+.trademarks{
+
+  &-item{
+    float: left;
+    width: 193px;
+    text-align: center;
+  }
+}
+
+
+.contacts {
+  font: 12px/18px $Arial_font;
+  color: #5d6063;
+
+  &__img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background: url('../img/footer_sprite.png');
+
+    &--address{
+      background-position: -5px -31px;
+    }
+    &--phone{
+      background-position: -5px -5px;
+    }
+    &--email{
+      background-position: -5px -57px;
+    }
+  }
+
+  &-address, &-phone, &-email{
+    display: inline-block;
+    float: left;
+    padding: 20px 0;
+  }
+  &-address{
+    &__street, &__city{
+      display: inline-block;
+      padding-left: 8px;
+    }
+  }
+  &-phone{
+    margin-left: 35px;
+  }
+  &-email{
+    margin-left: 42px;
+
+    &__mail{
+      text-decoration: none;
+      color: #5d6063;
+
+      &:hover{
+        color: $blue-color;
+      }
+    }
+  }
+}
+
+.copyright{
+  display: inline-block;
+  float: right;
+  padding: 20px 0;
+
+  &__link{
+    text-decoration: none;
+    color: #5d6063;
+
+    &:hover{
+      color: $blue-color;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.header-wrapper__logo{
+  float: left;
+}
+
+.header-social {
+  float: right;
+
+  &__icon {
+    float: left;
+    margin: 10px 16px 0;
+  }
+
+  &__link {
+    display: block;
+    height: 16px;
+    width: 16px;
+    background: url("../images/social_sprite.png");
+
+    &--fb {
+      background-position: -5px -5px;
+      &:hover {
+        background-position-y: -21px;
+      }
+    }
+
+    &--twitter {
+      background-position: -5px -169px;
+      &:hover {
+        background-position-y: -185px;
+      }
+    }
+
+    &--rss {
+      background-position: -5px -87px;
+      &:hover {
+        background-position-y: -103px;
+      }
+    }
+
+    &--li {
+      background-position: -5px -46px;
+      &:hover {
+        background-position-y: -61px;
+      }
+
+    }
+
+    &--skype {
+      background-position: -5px -128px;
+      &:hover {
+        background-position-y: -144px;
+      }
+    }
+  }
+}
+
+.nav-menu{
+  background-color: $style-color;
+
+  &__item{
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+
+    &:hover .nav-menu__link{
+      color: $gold-color;
+    }
+  }
+
+  &__link{
+    display: block;
+    padding: 19px 40px;
+    text-decoration: none;
+    color: #fff;
+    font: 14px/20px $Second_font;
+
+    &--active{
+      background-color: $blue-color;
+    }
+  }
+}
+
+.menu-search{
+  position: relative;
+  float: right;
+
+  &__input{
+    padding: 10px 15px;
+    margin: 8px;
+    width: 240px;
+    border: 1px solid #000;
+    background-color: #35383c;
+    color: #5d6063;
+    font: 12px/20px $Arial_font;
+  }
+  &__submit{
+    position: absolute;
+    top: 23px;
+    right: 25px;
+  }
+}
+.nav-menu{
+  background-color: $style-color;
+
+  &__item{
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+
+    &:hover .nav-menu__link{
+      color: $gold-color;
+    }
+  }
+
+  &__link{
+    display: block;
+    padding: 19px 40px;
+    text-decoration: none;
+    color: #fff;
+    font: 14px/20px $Second_font;
+
+    &--active{
+      background-color: $blue-color;
+    }
+  }
+}
