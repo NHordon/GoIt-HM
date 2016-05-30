@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+    font: normal #{$fontSize-small}/#{$lineHeight-base} $font-base;
+    color: $black;
+
+    background: red;
+
+    @media #{$large-up} {
+        font-size: $fontSize-base;
+    }
+}
+a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
