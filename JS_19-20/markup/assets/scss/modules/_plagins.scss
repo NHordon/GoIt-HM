@@ -20,7 +20,7 @@
     text-decoration: none;
 
     &:before, &--active:before{
-      content: url('../img/+.png');
+      content: url('../images/+.png');
       display: inline-block;
       height: 38px;
       width: 38px;
@@ -34,7 +34,7 @@
       color: #fff;
 
       &:before{
-        content: url('../img/-.png');
+        content: url('../images/-.png');
         background: $gold-color;
         border-right: 1px solid $gray-color;
       }

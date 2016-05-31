@@ -11,7 +11,7 @@
     display: inline-block;
     width: 32px;
     height: 32px;
-    background: url("../img/skills_sprite.png");
+    background: url("../images/skills_sprite.png");
     &--settings{
       background-position: -5px -5px;
     }
@@ -61,7 +61,7 @@
     margin-left: 10px ;
     height: 9px;
     width: 10px;
-    background: url('../img/arrow.png');
+    background: url('../images/arrow.png');
   }
 }
 .services-head{
@@ -87,18 +87,18 @@
     text-decoration: none;
 
     &--schedule{
-      background: url('../img/schedule.jpg') 75% 0;
+      background: url('../images/schedule.jpg') 75% 0;
     }
     &--prevent{
-      background: url('../img/prevent.jpg') 40% 0;
+      background: url('../images/prevent.jpg') 40% 0;
     }
 
     &--tire{
-      background: url('../img/tire.jpg') 0 0;
+      background: url('../images/tire.jpg') 0 0;
     }
 
     &--repair{
-      background: url('../img/repair.jpg') 50% 0;
+      background: url('../images/repair.jpg') 50% 0;
     }
 
     &:hover .services-item__cover, &:hover .services-item__cross {

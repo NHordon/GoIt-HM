@@ -197,7 +197,7 @@ gulp.task('css:min', function(cb) {
         .pipe(plugins.size({
             showFiles: true
         }))
-        .pipe(gulp.dest('./build/assets/css'))
+        .pipe(gulp.dest('./assets/css'))
     cb(null);
 });
 
@@ -210,7 +210,7 @@ gulp.task('js:min', function(cb) {
         .pipe(plugins.size({
             showFiles: true
         }))
-        .pipe(gulp.dest('./build/assets/js'))
+        .pipe(gulp.dest('./assets/js'))
     cb(null);
 });
 

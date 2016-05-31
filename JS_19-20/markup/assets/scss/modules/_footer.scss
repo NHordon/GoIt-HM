@@ -1,9 +1,9 @@
 
 
 
-.trademarks{
+.trademarks-block{
 
-  &-item{
+  li{
     float: left;
     width: 193px;
     text-align: center;
@@ -21,7 +21,7 @@
     height: 16px;
     line-height: 16px;
     vertical-align: text-top;
-    background: url('../img/footer_sprite.png');
+    background: url('../images/footer_sprite.png');
 
     &--address{
       background-position: -5px -31px;

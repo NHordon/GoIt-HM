@@ -11,7 +11,12 @@
 // plugins
 @import "plugins/jquery.bxslider";
 
-
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 body{
   font: 24px/20px $Main_font;
   color: $style-color;
