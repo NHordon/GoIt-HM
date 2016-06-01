@@ -2,39 +2,47 @@
 @import "mixins";
 @import "normalize";
 
-
 // modules
+@import "modules/reboot";
 @import "modules/header";
-@import "modules/content";
 @import "modules/footer";
+@import "modules/accordion";
+@import "modules/banners";
+@import "modules/contacts";
+@import "modules/copyright";
+@import "modules/lists";
+@import "modules/services";
+@import "modules/skills";
+@import "modules/news";
+@import "modules/trademarks";
 
 // plugins
 @import "plugins/jquery.bxslider";
 
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-body{
-  font: 24px/20px $Main_font;
-  color: $style-color;
-  list-style: none;
-}
-
-.clear-fix:after{
-  content: '';
-  display: block;
-  clear: both;
-}
 
 @include block-style('header');
 @include block-style('main-menu');
 @include block-style('slider');
 @include block-style('skills', 75px);
 @include block-style('services', 87px, $style-color);
-@include block-style('news_banners',0, $gray-color);
-@include block-style('trademarks',95px);
-@include block-style('links',100px,$style-color);
-@include block-style('contacts',0,#35383c);
+@include block-style('news_banners', 0, $gray-color);
+@include block-style('trademarks', 95px);
+@include block-style('links', 100px, $style-color);
+@include block-style('contacts', 0, #35383c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 24px/20px $Main_font;
+    color: $style-color;
+    list-style: none;
+}
+
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}

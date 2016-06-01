@@ -1,6 +1,4 @@
-/**
- * Created by klush on 14.05.2016.
- */
+
 var data = [{
     "guid": "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
     "index": 0,
@@ -313,13 +311,16 @@ $(function() {
 
     $(itemPanel).on('click', function(e) {
         e.preventDefault();
-        itemContent.slideUp();
+
         if ($(this).hasClass('accordion-item__panel--active')) {
-            itemPanel.removeClass('accordion-item__panel--active');
+            // itemPanel.removeClass('accordion-item__panel--active');
+             $(this).next().slideDown();
         } else {
             itemPanel.removeClass('accordion-item__panel--active');
             $(this).addClass('accordion-item__panel--active');
-            $(this).next().slideDown();
         }
     })
 });
+
+
+

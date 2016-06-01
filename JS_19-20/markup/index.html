@@ -14,21 +14,21 @@
                 <a href="#"><img src="assets/images/logo.png"></a>
             </div>
             <div class="header-social">
-                <ul class="header-social__icon clear_fix">
-                    <li>
-                        <a href="#" class="header-social__link header-social__link--fb"></a>
+                <ul class="clear_fix">
+                    <li class="header-social__icon">
+                        <a href="#" class="header-social__link header-social__link--fb" target="_blank"></a>
                     </li>
-                    <li>
-                        <a href="#" class="header-social__link header-social__link--twitter"></a>
+                    <li class="header-social__icon">
+                        <a href="#" class="header-social__link header-social__link--twitter" target="_blank"></a>
                     </li>
-                    <li>
-                        <a href="#" class="header-social__link header-social__link--rss"></a>
+                    <li class="header-social__icon">
+                        <a href="#" class="header-social__link header-social__link--rss" target="_blank"></a>
                     </li>
-                    <li>
-                        <a href="#" class="header-social__link header-social__link--li"></a>
+                    <li class="header-social__icon">
+                        <a href="#" class="header-social__link header-social__link--li" target="_blank"></a>
                     </li>
-                    <li>
-                        <a href="#" class="header-social__link header-social__link--skype"></a>
+                    <li class="header-social__icon">
+                        <a href="#" class="header-social__link header-social__link--skype" target="_blank"></a>
                     </li>
                 </ul>
             </div>
@@ -54,8 +54,10 @@
                         <a class="nav-menu__link" href="#">SHOP</a>
                     </li>
                     <li class="menu-search">
-                        <input class="menu-search__input" type="text" placeholder="Search...">
-                        <input class="menu-search__submit" type="image" src="assets/images/search_icon.png" name="submit">
+                        <form action="">
+                            <input class="menu-search__input" type="text" placeholder="Search...">
+                            <input class="menu-search__submit" type="image" src="assets/images/search_icon.png" name="submit">
+                        </form>
                     </li>
                 </ul>
             </nav>
@@ -75,7 +77,7 @@
             <div class="skills-item">
                 <span class="skills-item__number">01</span>
                 <div class="skills-item__body">
-                    <div class="skills-item__img" src="assets/images/settings.png" />
+                    <div class="skills-item__img skills-item__img--settings"></div>
                     <div class="skills-item__head">Power Inside</div>
                     <div class="skills-item__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
                     <a href="#" class="skills-item__readmore">Read more <span class="skills-item__arrow"></span></a>
@@ -84,7 +86,7 @@
             <div class="skills-item">
                 <span class="skills-item__number">02</span>
                 <div class="skills-item__body">
-                    <img class="skills-item__img" src="assets/images/params.png" />
+                    <div class="skills-item__img skills-item__img--params"></div>
                     <div class="skills-item__head">New Tecknologies</div>
                     <div class="skills-item__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
                     <a href="#" class="skills-item__readmore">Read more <span class="skills-item__arrow"></span></a>
@@ -93,7 +95,7 @@
             <div class="skills-item">
                 <span class="skills-item__number">03</span>
                 <div class="skills-item__body">
-                    <img class="skills-item__img" src="assets/images/truck.png" />
+                    <div class="skills-item__img skills-item__img--truck"></div>
                     <div class="skills-item__head">Fast Support</div>
                     <div class="skills-item__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique</div>
                     <a href="#" class="skills-item__readmore">Read more <span class="skills-item__arrow"></span></a>
@@ -203,22 +205,22 @@
     <div class="trademarks">
         <div class="trademarks-wrapper">
             <ul class="trademarks-block clear-fix">
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/RBP.png" /></a>
                 </li>
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/Moto.png" /></a>
                 </li>
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/2crave.png" /></a>
                 </li>
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/atx.png" /></a>
                 </li>
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/cruiser.png" /></a>
                 </li>
-                <li>
+                <li class="trademarks-item">
                     <a class="trademarks-item__link" href="#"><img src="assets/images/gear.png" /></a>
                 </li>
             </ul>
@@ -303,17 +305,17 @@
             <div class="contacts-wrapper">
                 <div class="clear-fix">
                     <div class="contacts-address">
-                        <img src="assets/images/location.png" />
+                        <span class="contacts__img contacts__img--address"></span>
                         <span>BuildHomeLtd.</span>
                         <span class="contacts-address__street">Street Name 123</span>
                         <span class="contacts-address__city">23 45 Cityname</span>
                     </div>
                     <div class="contacts-phone">
-                        <img src="assets/images/iphone.png" />
+                        <span class="contacts__img contacts__img--phone"></span>
                         <span class="contacts-phone__phone">+123 900 123 456</span>
                     </div>
                     <div class="contacts-email">
-                        <img src="assets/images/mail.png" />
+                        <span class="contacts__img contacts__img--email"></span>
                         <a class="contacts-email__mail" href="#">info@buildhome.web</a>
                     </div>
                     <div class="copyright">
@@ -323,6 +325,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.12.0/lodash.min.js"></script>
     <script src="assets/js/assets.js"></script>

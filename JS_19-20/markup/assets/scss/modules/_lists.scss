@@ -1,0 +1,28 @@
+.links-list {
+    float: left;
+    padding-bottom: 70px;
+    & + & {
+        margin-left: 40px;
+    }
+    &__head {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        padding: 63px 0 30px;
+    }
+    &__item {
+        width: 250px;
+        padding-left: 5px;
+        & + & {
+            border-top: 1px solid #393c40;
+        }
+    }
+    &__link {
+        font: 13px/36px $Arial_font;
+        color: #6e6f72;
+        text-decoration: none;
+        &:hover {
+            color: $blue-color;
+        }
+    }
+}

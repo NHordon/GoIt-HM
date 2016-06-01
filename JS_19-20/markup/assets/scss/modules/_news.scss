@@ -1,0 +1,67 @@
+.news {
+    float: left;
+    padding: 65px 0 50px;
+    &-block {
+        margin-top: 45px;
+    }
+    &-item {
+        width: 560px;
+        margin-bottom: 30px;
+        &__pic {
+            position: relative;
+            float: left;
+            padding-right: 35px;
+        }
+        &__img {
+            height: 150px;
+            width: 150px;
+        }
+        &__data {
+            position: absolute;
+            top: 12px;
+            left: -18px;
+        }
+        &__month,
+        &__date {
+            display: block;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        &__month {
+            background: $blue-color;
+            font-size: 15px;
+            color: #fff;
+        }
+        &__date {
+            background: $gold-color;
+            font-size: 18px;
+        }
+        &__head {
+            display: block;
+            color: $style-color;
+            font-size: 16px;
+            text-decoration: none;
+            &:hover {
+                color: $blue-color;
+            }
+        }
+        &__author,
+        &__text {
+            display: block;
+            color: #8a8a8a;
+            font: 13px/20px $Arial_font;
+        }
+        &__text {
+            margin-top: 30px;
+        }
+        &__colored {
+            color: $blue-color;
+            text-decoration: none;
+        }
+        &__comment {
+            padding-left: 10px;
+        }
+    }
+}

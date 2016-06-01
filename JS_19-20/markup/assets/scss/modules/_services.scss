@@ -1,0 +1,69 @@
+.services-head {
+    display: block;
+    padding-top: 47px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.services-item {
+    float: left;
+    margin-top: 55px;
+    padding-bottom: 70px;
+    & + & {
+        margin-left: 40px;
+    }
+    &__link {
+        display: inline-block;
+        position: relative;
+        width: 256px;
+        height: 256px;
+        text-decoration: none;
+        &--schedule {
+            background: url('../images/schedule.jpg') 75% 0;
+        }
+        &--prevent {
+            background: url('../images/prevent.jpg') 40% 0;
+        }
+        &--tire {
+            background: url('../images/tire.jpg') 0 0;
+        }
+        &--repair {
+            background: url('../images/repair.jpg') 50% 0;
+        }
+        &:hover .services-item__cover,
+        &:hover .services-item__cross {
+            display: block;
+        }
+        &:hover .services-item__text {
+            color: $gold-color;
+        }
+    }
+    &__cover,
+    &__cross {
+        display: none;
+        position: absolute;
+    }
+    &__cover {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $blue-color;
+        opacity: .6;
+    }
+    &__cross {
+        top: 50%;
+        left: 50%;
+        margin-top: -17px;
+        margin-left: -17px;
+    }
+    &__text {
+        display: block;
+        padding: 290px 0 70px;
+        width: 256px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+}

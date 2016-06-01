@@ -1,0 +1,12 @@
+.copyright {
+    display: inline-block;
+    float: right;
+    padding: 20px 0;
+    &__link {
+        text-decoration: none;
+        color: #5d6063;
+        &:hover {
+            color: $blue-color;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.skills-item {
+    float: left;
+    position: relative;
+    width: 360px;
+    & + & {
+        margin-left: 40px;
+    }
+    &__img {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url("../images/skills_sprite.png");
+        &--settings {
+            background-position: -5px -5px;
+        }
+        &--params {
+            background-position: -47px -5px;
+        }
+        &--truck {
+            background-position: -89px -5px;
+        }
+    }
+    &__number {
+        position: absolute;
+        top: 20px;
+        font-size: 90px;
+        color: #efeff0;
+        letter-spacing: -5px;
+    }
+    &__body {
+        padding-left: 125px;
+    }
+    &__head {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #2a2b2e;
+    }
+    &__text {
+        font-size: 13px;
+        color: #939393;
+        margin: 25px 0;
+    }
+    &__readmore {
+        font-size: 13px;
+        color: #2a2b2e;
+        text-decoration: none;
+        &:hover {
+            color: $blue-color;
+            & .skills-item__arrow {
+                background-position: 0 -9px;
+            }
+        }
+    }
+    &__arrow {
+        display: inline-block;
+        margin-left: 10px;
+        height: 9px;
+        width: 10px;
+        background: url('../images/arrow.png');
+    }
+}
